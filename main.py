@@ -7,6 +7,8 @@ import json
 
 from DataModel import DataModel
 from DataModel import JsonInput
+from DataModel2 import DataModel2
+from DataModel2 import JsonInput2
 from sklearn.metrics import mean_squared_error as mse
 
 app = FastAPI()
@@ -31,7 +33,7 @@ def make_predictions(dataModel: JsonInput):
       return {"result": results}
 
 @app.post("/newData")
-def make_predictions(dataModel: JsonInput):
+def make_predictions(dataModel: JsonInput2):
       print("inicio")
       petition_dict = dataModel
       print(petition_dict)
@@ -58,7 +60,7 @@ def proccess(petition_dict):
 
 def proccess2(petition_dict):
    frames = []
-   model = load("assets/modelo.joblib")
+   model = load("modelo.joblib")
    for petition in petition_dict:
       for pet in petition[1]:
          petition = pet
