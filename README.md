@@ -7,7 +7,7 @@
 
 ## Las pruebas realizadas en postman se encuentran en la carpeta JSON-Endpoints
 
-###Despliegue API:
+### Despliegue API:
 
 -Desde cmd sobre la carpeta lab4 donde se encuentra el laboratorio del grupo 15 ejecute el comando: uvicorn main:app --reload
 
@@ -15,7 +15,7 @@
 
 -En la pagina abierta previamente encontrara los 2 metodos GET predeterminados y los metodos POST de los enpoints 1 y 2
 
-###Ejecución endpoint 1
+### Ejecución endpoint 1
 
 -Para hacer peticiones POST del endpoint 1 se debe desplegar previamente la API: Pueden hacerse las pruebas a traves de la interfaz de navegador de fastAPI o desde el programa POSTMAN creando peticiones
 
@@ -56,7 +56,7 @@ Ejemplo:
 
 -Para hacer pruebas se uso el archivo data.json que se encuentra en el repositorio, que contiene alrededor de 1400 registros sin la columna "Admission Points" en el formato JSON que se mostro previamente. Se puede ingresar este texto a la petición para probar. 
 
-###Ejecución Endpoint 2
+### Ejecución Endpoint 2
 
 -Para hacer peticiones POST del endpoint 2 se debe desplegar previamente la API: Pueden hacerse las pruebas a traves de la interfaz de navegador de fastAPI o desde el programa POSTMAN creando peticiones
 
