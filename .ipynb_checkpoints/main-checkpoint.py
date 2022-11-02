@@ -47,7 +47,7 @@ def proccess(petition_dict):
          df = pd.DataFrame(petition, index=[0])
          print(df)
          #df.columns = dataModel.columns()
-         model = load("modelo.joblib")
+         model = load("assets/modelo.joblib")
          print("llego 1")
          result = model.predict(df)
          print("llego 2")
