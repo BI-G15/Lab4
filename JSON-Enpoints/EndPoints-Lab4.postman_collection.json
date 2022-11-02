@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "daedcb6d-c06c-4b0a-969c-3b93da9c7719",
+		"name": "EndPoints-Lab4",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17515079"
+	},
+	"item": [
+		{
+			"name": "Prediccion",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"list_of_inputs\": [\n        {\n            \"serial_no\": 1,\n            \"gre_score\": 301.0,\n            \"toefl_score\": 92.0,\n            \"University Rating\": 1.0,\n            \"sop\": 1.85,\n            \"lor\": 1.5,\n            \"CGPA\": 7.71,\n            \"Research\": 0.0\n        },\n        {\n            \"serial_no\": 20,\n            \"gre_score\": 320.0,\n            \"toefl_score\": 110.0,\n            \"University Rating\": 5.0,\n            \"sop\": 5.0,\n            \"lor\": 4.5,\n            \"CGPA\": 9.22,\n            \"Research\": 1.0\n        },\n        {\n            \"serial_no\": 30,\n            \"gre_score\": 299.0,\n            \"toefl_score\": 96.0,\n            \"University Rating\": 2.0,\n            \"sop\": 1.5,\n            \"lor\": 3.39,\n            \"CGPA\": 7.86,\n            \"Research\": 0.0\n        },\n        {\n            \"serial_no\": 14,\n            \"gre_score\": 328.0,\n            \"toefl_score\": 110.0,\n            \"University Rating\": 2.0,\n            \"sop\": 3.95,\n            \"lor\": 0.0,\n            \"CGPA\": 9.15,\n            \"Research\": 1.0\n        },\n        {\n            \"serial_no\": 41,\n            \"gre_score\": 319.0,\n            \"toefl_score\": 111.0,\n            \"University Rating\": 3.0,\n            \"sop\": 4.0,\n            \"lor\": 0.0,\n            \"CGPA\": 9.65,\n            \"Research\": 1.0\n        }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/predict",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metricas-1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"list_of_inputs\": [\n    {\n            \"serial_no\": 0,\n            \"gre_score\": 327.0,\n            \"toefl_score\": 113.0,\n            \"University Rating\": 4.0,\n            \"sop\": 4.0,\n            \"lor\": 0.0,\n            \"CGPA\": 8.88,\n            \"Research\": 1.0,\n            \"Admission Points\": 84.47\n        },\n        {\n            \"serial_no\": 1,\n            \"gre_score\": 301.0,\n            \"toefl_score\": 92.0,\n            \"University Rating\": 1.0,\n            \"sop\": 1.85,\n            \"lor\": 0.0,\n            \"CGPA\": 7.71,\n            \"Research\": 0.0,\n            \"Admission Points\": 45.08\n        },\n        {\n            \"serial_no\": 2,\n            \"gre_score\": 297.0,\n            \"toefl_score\": 100.0,\n            \"University Rating\": 1.0,\n            \"sop\": 2.41,\n            \"lor\": 0.0,\n            \"CGPA\": 7.89,\n            \"Research\": 0.0,\n            \"Admission Points\": 47.42\n        },\n        {\n            \"serial_no\": 3,\n            \"gre_score\": 303.0,\n            \"toefl_score\": 98.0,\n            \"University Rating\": 3.0,\n            \"sop\": 3.5,\n            \"lor\": 0.0,\n            \"CGPA\": 8.5,\n            \"Research\": 0.0,\n            \"Admission Points\": 62.0\n        },\n        {\n            \"serial_no\": 4,\n            \"gre_score\": 320.0,\n            \"toefl_score\": 94.0,\n            \"University Rating\": 2.0,\n            \"sop\": 1.38,\n            \"lor\": 0.0,\n            \"CGPA\": 8.78,\n            \"Research\": 1.0,\n            \"Admission Points\": 73.0\n        },\n        {\n            \"serial_no\": 5,\n            \"gre_score\": 321.0,\n            \"toefl_score\": 84.0,\n            \"University Rating\": 4.0,\n            \"sop\": 4.13,\n            \"lor\": 0.0,\n            \"CGPA\": 8.68,\n            \"Research\": 1.0,\n            \"Admission Points\": 69.0\n        },\n        {\n            \"serial_no\": 6,\n            \"gre_score\": 306.0,\n            \"toefl_score\": 110.0,\n            \"University Rating\": 3.0,\n            \"sop\": 3.0,\n            \"lor\": 0.0,\n            \"CGPA\": 8.0,\n            \"Research\": 0.0,\n            \"Admission Points\": 70.0\n        },\n        {\n            \"serial_no\": 7,\n            \"gre_score\": 299.0,\n            \"toefl_score\": 112.0,\n            \"University Rating\": 1.0,\n            \"sop\": 0.97,\n            \"lor\": 0.0,\n            \"CGPA\": 6.82,\n            \"Research\": 1.0,\n            \"Admission Points\": 40.03\n        },\n        {\n            \"serial_no\": 8,\n            \"gre_score\": 311.0,\n            \"toefl_score\": 74.0,\n            \"University Rating\": 4.0,\n            \"sop\": 1.5,\n            \"lor\": 0.0,\n            \"CGPA\": 8.36,\n            \"Research\": 0.0,\n            \"Admission Points\": 57.0\n        }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/newData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"newData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metricas-2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"list_of_inputs\": [\n    {\n            \"serial_no\": 15,\n            \"gre_score\": 301.0,\n            \"toefl_score\": 98.0,\n            \"University Rating\": 2.0,\n            \"sop\": 2.58,\n            \"lor\": 0.0,\n            \"CGPA\": 7.77,\n            \"Research\": 0.0,\n            \"Admission Points\": 35.0\n        },\n{\n            \"serial_no\": 16,\n            \"gre_score\": 320.0,\n            \"toefl_score\": 110.0,\n            \"University Rating\": 2.0,\n            \"sop\": 4.0,\n            \"lor\": 0.0,\n            \"CGPA\": 8.56,\n            \"Research\": 0.0,\n            \"Admission Points\": 72.0\n        }\n  ]\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/newData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"newData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metricas-3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"list_of_inputs\": [\n    {\n            \"serial_no\": 19,\n            \"gre_score\": 306.0,\n            \"toefl_score\": 101.0,\n            \"University Rating\": 1.0,\n            \"sop\": 2.41,\n            \"lor\": 0.0,\n            \"CGPA\": 9.44,\n            \"Research\": 0.0,\n            \"Admission Points\": 39.06\n        },\n        {\n            \"serial_no\": 20,\n            \"gre_score\": 320.0,\n            \"toefl_score\": 110.0,\n            \"University Rating\": 5.0,\n            \"sop\": 5.0,\n            \"lor\": 0.0,\n            \"CGPA\": 9.22,\n            \"Research\": 1.0,\n            \"Admission Points\": 92.0\n        },\n        {\n            \"serial_no\": 21,\n            \"gre_score\": 293.0,\n            \"toefl_score\": 102.0,\n            \"University Rating\": 2.0,\n            \"sop\": 2.42,\n            \"lor\": 0.0,\n            \"CGPA\": 7.17,\n            \"Research\": 0.0,\n            \"Admission Points\": 49.02\n        },\n        {\n            \"serial_no\": 22,\n            \"gre_score\": 324.0,\n            \"toefl_score\": 74.0,\n            \"University Rating\": 5.0,\n            \"sop\": 4.19,\n            \"lor\": 0.0,\n            \"CGPA\": 8.88,\n            \"Research\": 1.0,\n            \"Admission Points\": 87.02\n        },\n        {\n            \"serial_no\": 23,\n            \"gre_score\": 310.0,\n            \"toefl_score\": 100.0,\n            \"University Rating\": 3.0,\n            \"sop\": 3.41,\n            \"lor\": 0.0,\n            \"CGPA\": 7.76,\n            \"Research\": 0.0,\n            \"Admission Points\": 45.93\n        },\n        {\n            \"serial_no\": 24,\n            \"gre_score\": 298.0,\n            \"toefl_score\": 109.0,\n            \"University Rating\": 2.0,\n            \"sop\": 2.98,\n            \"lor\": 0.0,\n            \"CGPA\": 7.21,\n            \"Research\": 0.0,\n            \"Admission Points\": 45.0\n        },\n        {\n            \"serial_no\": 25,\n            \"gre_score\": 325.0,\n            \"toefl_score\": 107.0,\n            \"University Rating\": 4.0,\n            \"sop\": 4.5,\n            \"lor\": 0.0,\n            \"CGPA\": 9.06,\n            \"Research\": 1.0,\n            \"Admission Points\": 79.0\n        }\n  ]\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/newData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"newData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metricas-4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"list_of_inputs\": [\n    {\n            \"serial_no\": 14,\n            \"gre_score\": 328.0,\n            \"toefl_score\": 110.0,\n            \"University Rating\": 2.0,\n            \"sop\": 3.95,\n            \"lor\": 0.0,\n            \"CGPA\": 9.15,\n            \"Research\": 1.0,\n            \"Admission Points\": 126.0\n        },\n        {\n            \"serial_no\": 15,\n            \"gre_score\": 301.0,\n            \"toefl_score\": 98.0,\n            \"University Rating\": 8.0,\n            \"sop\": 2.58,\n            \"lor\": 0.0,\n            \"CGPA\": 10.77,\n            \"Research\": 0.0,\n            \"Admission Points\": 0.0\n        },\n        {\n            \"serial_no\": 16,\n            \"gre_score\": 320.0,\n            \"toefl_score\": 110.0,\n            \"University Rating\": 2.0,\n            \"sop\": 4.0,\n            \"lor\": 0.0,\n            \"CGPA\": 2.56,\n            \"Research\": 0.0,\n            \"Admission Points\": 0.0\n        },\n        {\n            \"serial_no\": 67,\n            \"gre_score\": 275.0,\n            \"toefl_score\": 94.0,\n            \"University Rating\": 0.0,\n            \"sop\": 4.0,\n            \"lor\": 0.0,\n            \"CGPA\": 0,\n            \"Research\": 0.0,\n            \"Admission Points\": 127.5\n        },\n{\n            \"serial_no\": 68,\n            \"gre_score\": 321.0,\n            \"toefl_score\": 114.0,\n            \"University Rating\": 1.0,\n            \"sop\": 4.0,\n            \"lor\": 0.0,\n            \"CGPA\": 9.12,\n            \"Research\": 0.0,\n            \"Admission Points\": 85.0\n        }\n  ]\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/newData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"newData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Metricas-5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"list_of_inputs\": [\n    {\n            \"serial_no\": 68,\n            \"gre_score\": 321.0,\n            \"toefl_score\": 114.0,\n            \"University Rating\": 0.0,\n            \"sop\": 4.0,\n            \"lor\": 0.0,\n            \"CGPA\": 9.12,\n            \"Research\": 1.0,\n            \"Admission Points\": 85.0\n        },\n        {\n            \"serial_no\": 69,\n            \"gre_score\": 321.0,\n            \"toefl_score\": 109.0,\n            \"University Rating\": 4.0,\n            \"sop\": 3.5,\n            \"lor\": 0.0,\n            \"CGPA\": 8.35,\n            \"Research\": 0.0,\n            \"Admission Points\": 15.0\n        },\n        {\n            \"serial_no\": 69,\n            \"gre_score\": 321.0,\n            \"toefl_score\": 109.0,\n            \"University Rating\": 10.0,\n            \"sop\": 3.5,\n            \"lor\": 0.0,\n            \"CGPA\": 8.35,\n            \"Research\": 1.0,\n            \"Admission Points\": 140.0\n        },\n        {\n            \"serial_no\": 69,\n            \"gre_score\": 321.0,\n            \"toefl_score\": 109.0,\n            \"University Rating\": 1.0,\n            \"sop\": 3.5,\n            \"lor\": 0.0,\n            \"CGPA\": 8.35,\n            \"Research\": 0.0,\n            \"Admission Points\": 136.0\n        },\n        {\n            \"serial_no\": 69,\n            \"gre_score\": 321.0,\n            \"toefl_score\": 109.0,\n            \"University Rating\": 0.0,\n            \"sop\": 3.5,\n            \"lor\": 0.0,\n            \"CGPA\": 8.35,\n            \"Research\": 1.0,\n            \"Admission Points\": 140.0\n        }\n  ]\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/newData",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"newData"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
