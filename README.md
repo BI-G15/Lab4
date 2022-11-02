@@ -5,6 +5,8 @@
 * Jessica Alejandra Robles Moreno
 * Juan Esteban Vergara Ascencio
 
+## Las pruebas realizadas en postman se encuentran en la carpeta JSON-Endpoints
+
 ###Despliegue API:
 
 -Desde cmd sobre la carpeta lab4 donde se encuentra el laboratorio del grupo 15 ejecute el comando: uvicorn main:app --reload
