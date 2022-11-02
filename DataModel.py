@@ -15,7 +15,6 @@ class DataModel(BaseModel):
     research: float
 
 class JsonInput (BaseModel):
-    print("ok")
     list_of_inputs: List[dict]
     
 #Esta función retorna los nombres de las columnas correspondientes con el modelo exportado en joblib.
