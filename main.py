@@ -1,7 +1,7 @@
 from typing import Optional
 
 from fastapi import FastAPI
-from joblib import load
+from joblib import load, dump
 import pandas as pd
 import json
 
@@ -61,4 +61,5 @@ def proccess2(petition_dict):
    r2 = pipe.score(x,y)
    y_predicted = pipe.predict(x)
    rmse = (mse(y, y_predicted))**(1/2)
+   dump(pipe, "modelo.joblib")
    return {"RMSE": rmse, "R^2": r2}
